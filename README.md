@@ -1,3 +1,4 @@
-# navbar_app
+# Clothes Shopping single app
 
-A new Flutter project.
+## Technologies used:
+  - [![Dart](https://skillicons.dev/icons?i=dart)](https://skillicons.dev)
