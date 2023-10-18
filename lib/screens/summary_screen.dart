@@ -1,6 +1,7 @@
 // ignore_for_file: library_private_types_in_public_api
 
 import 'package:flutter/material.dart';
+import 'package:navbar_app/screens/custom_screen.dart';
 import 'package:navbar_app/widgets/button.dart';
 
 class SummaryScreen extends StatefulWidget {
@@ -93,6 +94,7 @@ class _SummaryScreenState extends State<SummaryScreen> {
                   buttonColor: Colors.teal[400]!,
                   buttonSizeHeight: 40,
                   buttonSizeWidth: 140,
+                  pageToNav: CustomScreen(),
                 ),
               ],
             ),
