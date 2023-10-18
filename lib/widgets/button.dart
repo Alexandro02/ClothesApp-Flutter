@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:navbar_app/screens/home_screen.dart';
 
 class Button extends StatelessWidget {
   final String buttonText;
@@ -10,7 +11,7 @@ class Button extends StatelessWidget {
   const Button({
     super.key,
     required this.buttonText,
-    required this.pageToNav,
+    this.pageToNav = const HomeScreen(),
     required this.buttonColor,
     required this.buttonSizeHeight,
     required this.buttonSizeWidth,

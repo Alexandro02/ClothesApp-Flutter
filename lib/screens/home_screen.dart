@@ -32,6 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
             buttonText: "Without image",
             pageToNav: CustomScreen(
               totalCost: 29.99,
+              typeOfTshirt: 'Without image',
             ),
             buttonColor: Colors.teal,
             buttonSizeHeight: 45.0,
@@ -42,6 +43,7 @@ class _HomeScreenState extends State<HomeScreen> {
             buttonText: "With image",
             pageToNav: CustomScreen(
               totalCost: 39.99,
+              typeOfTshirt: 'With image',
             ),
             buttonColor: Colors.teal,
             buttonSizeHeight: 45.0,
@@ -52,6 +54,7 @@ class _HomeScreenState extends State<HomeScreen> {
             buttonText: "Custom image",
             pageToNav: CustomScreen(
               totalCost: 79.99,
+              typeOfTshirt: 'Custom image',
             ),
             buttonColor: Colors.teal,
             buttonSizeHeight: 45.0,
