@@ -14,25 +14,51 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [
-        SizedBox(height: 100),
-        Image(
-          image: NetworkImage(
-              "https://static.vecteezy.com/system/resources/previews/008/847/318/non_2x/isolated-black-t-shirt-front-free-png.png"),
-        ),
-        SizedBox(height: 35),
-        Text(
-          "Buy our T-shirts",
-          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-        ),
-        SizedBox(height: 25),
-        Button(text: "Without image", pageToNav: CustomScreen()),
-        SizedBox(height: 25),
-        Button(text: "With image", pageToNav: CustomScreen()),
-        SizedBox(height: 25),
-        Button(text: "Custom image", pageToNav: CustomScreen())
-      ],
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          const SizedBox(height: 60),
+          const Image(
+            image: NetworkImage(
+                "https://static.vecteezy.com/system/resources/previews/008/847/318/non_2x/isolated-black-t-shirt-front-free-png.png"),
+          ),
+          const SizedBox(height: 35),
+          const Text(
+            "Buy our T-shirts",
+            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+          ),
+          const SizedBox(height: 25),
+          Button(
+            buttonText: "Without image",
+            pageToNav: CustomScreen(
+              totalCost: 29.99,
+            ),
+            buttonColor: Colors.teal,
+            buttonSizeHeight: 45.0,
+            buttonSizeWidth: 140.0,
+          ),
+          const SizedBox(height: 25),
+          Button(
+            buttonText: "With image",
+            pageToNav: CustomScreen(
+              totalCost: 39.99,
+            ),
+            buttonColor: Colors.teal,
+            buttonSizeHeight: 45.0,
+            buttonSizeWidth: 140.0,
+          ),
+          const SizedBox(height: 25),
+          Button(
+            buttonText: "Custom image",
+            pageToNav: CustomScreen(
+              totalCost: 79.99,
+            ),
+            buttonColor: Colors.teal,
+            buttonSizeHeight: 45.0,
+            buttonSizeWidth: 140.0,
+          )
+        ],
+      ),
     );
   }
 }

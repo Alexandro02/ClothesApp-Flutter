@@ -1,10 +1,20 @@
 import 'package:flutter/material.dart';
 
 class Button extends StatelessWidget {
-  final String text;
+  final String buttonText;
   final Widget pageToNav;
+  final Color buttonColor;
+  final double buttonSizeHeight;
+  final double buttonSizeWidth;
 
-  const Button({super.key, required this.text, required this.pageToNav});
+  const Button({
+    super.key,
+    required this.buttonText,
+    required this.pageToNav,
+    required this.buttonColor,
+    required this.buttonSizeHeight,
+    required this.buttonSizeWidth,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -15,15 +25,15 @@ class Button extends StatelessWidget {
           builder: (context) => pageToNav,
         ),
       ),
-      // Just styling button
+      // Button Styles
       style: ButtonStyle(
-        backgroundColor: MaterialStateProperty.all<Color>(Colors.teal),
+        backgroundColor: MaterialStateProperty.all<Color>(buttonColor),
         minimumSize: MaterialStateProperty.all<Size>(
-          const Size(140.0, 45.0),
+          Size(buttonSizeWidth, buttonSizeHeight),
         ),
       ),
-      // Text to show
-      child: Text(text),
+      // Text Button
+      child: Text(buttonText),
     );
   }
 }
