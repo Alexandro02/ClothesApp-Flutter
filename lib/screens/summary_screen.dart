@@ -1,7 +1,6 @@
 // ignore_for_file: library_private_types_in_public_api
 
 import 'package:flutter/material.dart';
-import 'package:navbar_app/screens/custom_screen.dart';
 import 'package:navbar_app/screens/home_screen.dart';
 import 'package:navbar_app/widgets/button.dart';
 
